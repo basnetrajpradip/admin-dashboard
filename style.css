@@ -1,0 +1,162 @@
+body{
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,a:active{
+    color:black;
+    text-decoration: none;
+}
+
+.sidebar svg{
+    fill:white;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.header svg{
+    height: 22px;
+    width: 25px;
+    vertical-align: middle;
+}
+
+.profile-img{
+    vertical-align: middle;
+    height:50px ;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+                        "sidebar header"
+                        "sidebar article";
+    width: 100vw;
+    height: 100vh;                    
+
+}
+
+.header{
+    grid-area: header;
+    border:2px solid red;
+}
+
+.sidebar{
+    background-color:#1992d4;
+    border:2px solid red;
+    grid-area: sidebar;
+    display: flex;
+    gap:3rem;
+    flex-direction: column;
+}
+
+.content{
+    grid-area: article;
+    border: 2px solid red;
+}
+
+.header-top{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}    
+.right-header{
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+    justify-items: space-around;
+    align-items: center;
+}    
+
+.user-profile{
+    display: flex;
+    gap:1.5rem;
+}    
+
+.header-below{
+    padding: 1rem;
+    padding-left: 3.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.header-below img{
+    height: 80px;
+    width: 80px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.sidebar span{
+    color:white;
+    font-weight: 600;
+}
+
+.nav a{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.logo{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.logo svg{
+    height: 50px;
+    width: 50px;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.user-nav,.tool-nav{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.search-bar{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 70px 70%;
+    gap: .7rem;
+}
+
+.search-bar label{
+    justify-self: end;
+}
+
+.search-bar input{
+    appearance: none;
+    background-color: #e2e8f0;
+    border: 2px solid rgb(235, 231, 231);
+    border-radius: 1rem;
+    height: 1.7rem;
+}
+
+.search-bar svg{
+    height: 25px;
+    width: 30px;
+}
+
+.search-bar input:focus{
+    outline: none;
+    border: 2px solid rgb(163, 163, 163)
+}

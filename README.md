@@ -4,4 +4,5 @@ Practising grid with simple Dashboard layout.
 
 ## Demo
 
-View Demo [Here]([basnetrajpradip.github.io/admin-dashboard](https://basnetrajpradip.github.io/admin-dashboard/))
+View Demo [Here](https://basnetrajpradip.github.io/admin-dashboard/)
+

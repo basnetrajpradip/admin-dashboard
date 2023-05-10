@@ -335,6 +335,10 @@ a,a:active{
     vertical-align: middle;
 }
 
+.card svg:hover{
+    fill:rgb(230, 197, 11);;
+}
+
 .icons{
     margin-top: 1rem;
     padding-right: 1rem;

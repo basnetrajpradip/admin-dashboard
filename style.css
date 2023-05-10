@@ -58,6 +58,7 @@ a,a:active{
 }
 
 .content{
+    padding-right:1.5rem;
     padding-top: 2rem;
     padding-bottom: 5rem;
     grid-area: article;
@@ -223,6 +224,7 @@ a,a:active{
     display: grid;
     gap:1rem;
     padding-left: 1.5rem;
+/*     grid-template-rows: 35px 1fr; */
 }
 
 .article{
@@ -240,6 +242,7 @@ a,a:active{
     padding: 2rem;
     font-size: 1.2rem;
     color:rgb(82, 80, 80);
+    display: grid;
 }
 
 .card-header{
@@ -248,3 +251,85 @@ a,a:active{
     font-size: 1.5rem;
 }
 
+.announcements{
+    display: flex;
+    padding-right: 2rem;
+    flex-direction: column;
+    gap:1rem;
+    
+
+}
+
+.announcement-article{
+    display: grid;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap:1rem;
+    color:rgb(82, 80, 80);
+    font-size: 1rem;
+    box-shadow: 3px 3px 8px #aaa2a2;
+}
+
+.announcement-card{
+    height: 90px;
+    width: calc(100%);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+    overflow:hidden;
+/*     display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+
+.announcement-header{
+    color:black;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+.trending{
+    padding-right: 2rem;2
+}
+
+.trending-article{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap:2rem;
+    color:rgb(82, 80, 80);
+    font-size: 1.2rem;
+    box-shadow: 3px 3px 8px #aaa2a2;
+}
+
+.trending-card img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.trending-card{
+    display: flex;
+    gap:2rem;
+}
+
+.trending-profile-name{
+    font-weight: 550;
+    color: black;
+}
+
+.card svg{
+    height: 35px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.icons{
+    margin-top: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    gap:1.5rem;
+    justify-content: flex-end;
+}
